@@ -1,5 +1,5 @@
 <?php
-    $db = mysqli_connect("localhost","root","","niysdosham_db");    
+    $db = mysqli_connect("localhost","root","","niysadosham_db");    
     mysqli_query($db, "SET NAMES UTF8");
 
     if (!$db) {

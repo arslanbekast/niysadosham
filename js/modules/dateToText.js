@@ -15,12 +15,7 @@ export const dateToText = (date) => {
             let result = "<div class='date-to-text-wrapper'>"
             if (!response.errors.length) {
                 response.text.forEach(text => {
-                    if (text.includes('|')) {
-                        const textArray = text.split('|');
-                        result += `<p>${textArray[0]}</p><span class="day-of-week">${textArray[1]}</span>`;
-                    } else {
-                        result += `<p>${text}</p>`;
-                    }
+                    result += `<p>${text}</p>`;
                     
                 });
                 result += "</div>"

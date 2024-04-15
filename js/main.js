@@ -26,10 +26,10 @@ function main() {
 			return
 		}
 
-		if (isNumber(word)) {
-			numberToText(word)
-		} else if (isDate(word)) {
+		if (isDate(word)) {
 			dateToText(word);
+		} else if (isNumber(word)) {
+			numberToText(word)
 		} else if (alphabet.includes(word)) {
 			getWordsForLetter(word);
 		} else {

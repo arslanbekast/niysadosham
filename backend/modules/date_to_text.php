@@ -64,7 +64,7 @@ function date_to_text($date) {
         if( strpos($year_text, 'эзарлагӀа') !== false ) {
             $year_text = rtrim($year_text, 'а');
         }
-        $result = $year_text . 'чу' . ' шеран ' . $months_numbers[$month] . ' беттан ' . ordinal_numbers($day) . ' де|' . day_of_week("$year-$month-$day");
+        $result = $year_text . 'чу' . ' шеран ' . $months_numbers[$month] . ' беттан ' . ordinal_numbers($day) . ' де, ' . day_of_week("$year-$month-$day");
     } elseif (preg_match($dayWithMonthRegex, $date, $matches)) {
         $day = intval($matches[1]);
         $month = mb_strtolower($matches[2], 'UTF-8');
