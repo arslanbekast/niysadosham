@@ -96,11 +96,31 @@ function main() {
 	});
 
 	jQuery(document).on('click', ".search-form__clear-btn", function() {
-		jQuery('#word').val('');
-		jQuery(this).removeClass('show');
-		jQuery("#word").removeClass('clear-shown');
-		jQuery('.content').html('').fadeOut();
+		const doubleLetters = ['аь', 'гӀ', 'кх', 'къ', 'кӀ', 'оь', 'пӀ', 'тӀ', 'уь', 'хь', 'хӀ', 'цӀ', 'чӀ', 'юь', 'яь',]
+		const word = jQuery('#word').val();
+		
+		if (word.length > 0) {
+			if (word.length > 1) {
+				if (doubleLetters.includes(word.slice(-2))) {
+					jQuery('#word').val(word.slice(0, -2));
+				} else {
+					jQuery('#word').val(word.slice(0, -1));
+				}
+				
+			} else {
+				jQuery('#word').val(word.slice(0, -1));
+			}
+			
+		}
+		
+		if (jQuery('#word').val().length === 0) {
+			jQuery(this).removeClass('show');
+			jQuery("#word").removeClass('clear-shown');
+			jQuery('.content').html('').fadeOut();
+		}
+		
 	});
+
 	jQuery(document).on('click', ".search-form__keyboard-btn", function() {
 		jQuery(".alphabet-wrapper").slideToggle();
 	});

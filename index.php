@@ -49,7 +49,8 @@
             <div class="search-form__input-wrapper">
                 <input type="text" autofocus id="word" placeholder="Дош йа терахь дӀайазде (дд.мм.гггг, 1 сентября)" class="search-form__input">
                 <button class="search-form__clear-btn" type="button" title="МогӀа дӀацӀанбе">
-                    <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.66 6.96 16 14.63 8.32 6.96 6.95 8.33 14.62 16l-7.67 7.67 1.37 1.37 7.67-7.68 7.67 7.68 1.37-1.37L17.36 16l7.67-7.67-1.37-1.37Z" fill="inherit"></path></svg>
+                    <!-- <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.66 6.96 16 14.63 8.32 6.96 6.95 8.33 14.62 16l-7.67 7.67 1.37 1.37 7.67-7.68 7.67 7.68 1.37-1.37L17.36 16l7.67-7.67-1.37-1.37Z" fill="inherit"></path></svg> -->
+                    <img src="img/icons/backspaceIcon.png" alt="Backspace"/>
                 </button>
                 <button class="search-form__keyboard-btn" title="Пилгу">
                     <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 9h15a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2zm-4 2a4 4 0 0 1 4-4h15a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V11zm5 4a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zm3 1a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5-1a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zm3 1a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm1-5a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zM9 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm5-1a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2h-1zm3 1a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zm-4 7a1 1 0 1 0 0 2h7a1 1 0 1 0 0-2h-7z" fill="inherit"></path></svg>

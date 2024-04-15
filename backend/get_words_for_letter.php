@@ -48,7 +48,7 @@ if (isset($_POST['letter'])) {
     }
 
     if (count($response['words']) === 0) {
-        $response['errors'][] = 'Бази йуккъехь и дош хьалхара долуш дош дац.';
+        $response['errors'][] = 'Бази йуккъехь и элп хьалхара долуш дош дац.';
     }
 
     echo json_encode($response);
