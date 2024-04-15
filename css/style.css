@@ -15,6 +15,9 @@ body {
 	/* font-family: 'Roboto', sans-serif; */
 	font-family: "Nunito", sans-serif;
 }
+sup {
+	font-size: 13px;
+}
 .container {
     position: relative;
 	height: 100%;
