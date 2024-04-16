@@ -101,7 +101,7 @@ function main() {
 		
 		if (word.length > 0) {
 			if (word.length > 1) {
-				if (doubleLetters.includes(word.slice(-2))) {
+				if (doubleLetters.includes(word.slice(-2).toLowerCase().replace('ӏ', 'Ӏ'))) {
 					jQuery('#word').val(word.slice(0, -2));
 				} else {
 					jQuery('#word').val(word.slice(0, -1));
