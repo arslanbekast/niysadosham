@@ -3,6 +3,7 @@
 function query_in_article($word, $db) {
     $response['words'] = array();
     $pattern = "( |>)($word)(;|,|<| )";
+    
     // $pattern = "( |[^А-я0-9Ӏ])($word)( |[^А-я0-9Ӏ])";
     $query = "SELECT id,word,article,article_for_search FROM orthographic_dictionary WHERE article_for_search REGEXP '$pattern' LIMIT 100";
     $result = mysqli_query($db,$query);

@@ -6,7 +6,7 @@ include ("backend/settings/db.php");
 $dict = 'dict.txt';
 $file_array = file($dict); // Считывание файла в массив $file_array
 
-$letters_for_replace = ['ā'=>'а', 'ē'=>'е', 'ō'=>'о', 'ȳ'=>'у', 'э̄'=>'э'];
+$letters_for_replace = ['ā'=>'а', 'â'=>'а', 'ē'=>'е', 'ō'=>'о', 'ȳ'=>'у', 'э̄'=>'э'];
 for ($i = 0; $i < count($file_array); $i++) { 
     list($word,$article) = explode('|', $file_array[$i]);
     $word = trim($word);
