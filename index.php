@@ -96,8 +96,8 @@
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="footer__text-wrapper">
-                <div class="footer__text">&#169; Нохчийн Республикин дешаран а, Ӏилманан а министерство, <?php echo date ('Y'); ?></div>
-                <div class="footer__text">&#169; ООО "Дош", <?php echo date ('Y'); ?></div> 
+                <div class="footer__text">&#169; Нохчийн Республикин дешаран а, Ӏилманан а министерство, 2024</div>
+                <div class="footer__text">&#169; ООО "Дош", 2024</div> 
             </div>
         </div>
     </footer>
