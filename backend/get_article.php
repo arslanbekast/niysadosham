@@ -40,7 +40,7 @@ if (isset($_POST['word']) && !empty('word')) {
     
 
     // Поиск слов, начинающихся на введенные символы
-    $query = "SELECT id,word,article FROM orthographic_dictionary WHERE word_for_search REGEXP '^$word.+' LIMIT 100";
+    $query = "SELECT id,word,article FROM orthographic_dictionary WHERE LOWER(word_for_search) REGEXP '^$word.+' LIMIT 100";
 	$result = mysqli_query($db,$query);
 
     while ($row = mysqli_fetch_assoc($result)) {
